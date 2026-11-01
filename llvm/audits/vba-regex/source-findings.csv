@@ -1,0 +1,189 @@
+category,file,line,procedure,detail
+runtime_operators,ArrayBuffer.bas,133,AppendPrefixedPairsArray,integer division
+runtime_operators,ArrayBuffer.bas,148,IncreaseCapacity,integer division
+module_storage_declarations,RegexAst.bas,54,,Boolean
+numeric_const_declarations,RegexAst.bas,61,InitializeAstTable,Long
+numeric_const_declarations,RegexAst.bas,62,InitializeAstTable,Long
+numeric_const_declarations,RegexAst.bas,63,InitializeAstTable,Long
+numeric_const_declarations,RegexAst.bas,64,InitializeAstTable,Long
+numeric_const_declarations,RegexAst.bas,65,InitializeAstTable,Long
+numeric_const_declarations,RegexAst.bas,427,PrepareStackAndBytecodeBuffer,Long
+runtime_operators,RegexAst.bas,483,PrepareStackAndBytecodeBuffer,integer division
+runtime_operators,RegexBytecode.bas,94,GetIdentifierId,integer division
+optional_parameters,RegexCompiler.bas,29,Compile,Boolean
+udt_array_declarations,RegexDfsMatcher.bas,24,,StartLengthPair()
+udt_array_declarations,RegexDfsMatcher.bas,41,,DfsMatcherStackFrame()
+optional_parameters,RegexDfsMatcher.bas,63,DfsMatch,Long
+optional_parameters,RegexDfsMatcher.bas,64,DfsMatch,Boolean
+optional_parameters,RegexDfsMatcher.bas,65,DfsMatch,Boolean
+optional_parameters,RegexDfsMatcher.bas,80,DfsMatchFrom,Long
+optional_parameters,RegexDfsMatcher.bas,81,DfsMatchFrom,Boolean
+optional_parameters,RegexDfsMatcher.bas,82,DfsMatchFrom,Boolean
+optional_parameters,RegexDfsMatcher.bas,83,DfsMatchFrom,Boolean
+runtime_operators,RegexDfsMatcher.bas,91,DfsMatchFrom,integer division
+runtime_nondecimal_literals,RegexDfsMatcher.bas,122,GetInputCharCode,&HFFFF&
+runtime_nondecimal_literals,RegexDfsMatcher.bas,133,PeekInputCharCode,&HFFFF&
+runtime_operators,RegexDfsMatcher.bas,179,PushMatcherStackFrame,integer division
+with_nonstable_receivers,RegexDfsMatcher.bas,182,PushMatcherStackFrame,DfsMatcherStackFrame
+with_nonstable_receivers,RegexDfsMatcher.bas,215,PopMatcherStackFrame,DfsMatcherStackFrame
+with_nonstable_receivers,RegexDfsMatcher.bas,242,ReturnToMasterDiscardCaptures,DfsMatcherStackFrame
+with_nonstable_receivers,RegexDfsMatcher.bas,269,ReturnToMasterPreserveCaptures,DfsMatcherStackFrame
+with_nonstable_receivers,RegexDfsMatcher.bas,318,CopyCaptures,StartLengthPair
+with_nonstable_receivers,RegexDfsMatcher.bas,320,CopyCaptures,StartLengthPair
+with_nonstable_receivers,RegexDfsMatcher.bas,322,CopyCaptures,StartLengthPair
+optional_parameters,RegexDfsMatcher.bas,382,DfsRunThreads,Boolean
+runtime_operators,RegexDfsMatcher.bas,503,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,517,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,519,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,524,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,536,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,658,DfsRunThreads,integer division
+runtime_operators,RegexDfsMatcher.bas,667,DfsRunThreads,integer division
+udt_array_declarations,RegexIdentifierSupport.bas,21,,IdentifierTreeNode()
+runtime_operators,RegexIdentifierSupport.bas,75,RedBlackFindOrInsert,integer division
+with_nonstable_receivers,RegexIdentifierSupport.bas,78,RedBlackFindOrInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,136,RedBlackInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,187,RedBlackInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,197,RedBlackInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,198,RedBlackInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,199,RedBlackInsert,IdentifierTreeNode
+with_nonstable_receivers,RegexIdentifierSupport.bas,207,RedBlackInsert,IdentifierTreeNode
+numeric_const_declarations,RegexLexer.bas,59,,Long
+runtime_operators,RegexLexer.bas,301,ParseReToken,Mod
+runtime_nondecimal_literals,RegexLexer.bas,309,ParseReToken,&HC&
+runtime_nondecimal_literals,RegexLexer.bas,312,ParseReToken,&HA&
+runtime_nondecimal_literals,RegexLexer.bas,315,ParseReToken,&H9&
+runtime_nondecimal_literals,RegexLexer.bas,318,ParseReToken,&HD&
+runtime_nondecimal_literals,RegexLexer.bas,331,ParseReToken,&HB&
+runtime_nondecimal_literals,RegexLexer.bas,568,ParseReRanges,&H8&
+runtime_nondecimal_literals,RegexLexer.bas,570,ParseReRanges,&HC&
+runtime_nondecimal_literals,RegexLexer.bas,572,ParseReRanges,&HA&
+runtime_nondecimal_literals,RegexLexer.bas,574,ParseReRanges,&H9&
+runtime_nondecimal_literals,RegexLexer.bas,576,ParseReRanges,&HD&
+runtime_nondecimal_literals,RegexLexer.bas,578,ParseReRanges,&HB&
+runtime_operators,RegexLexer.bas,582,ParseReRanges,Mod
+boolean_integral_assignments,RegexLexer.bas,655,ParseReRanges,Integer -> Boolean
+runtime_operators,RegexLexer.bas,673,ParseReRanges,integer division
+runtime_operators,RegexLexer.bas,700,HeapsortPairs,integer division
+runtime_operators,RegexLexer.bas,738,HeapsortPairs,integer division
+runtime_nondecimal_literals,RegexLexer.bas,808,LexerParseEscapeU,&H10FFF
+numeric_const_declarations,RegexLexer.bas,842,HexvalValidate,Long
+numeric_const_declarations,RegexLexer.bas,843,HexvalValidate,Long
+runtime_nondecimal_literals,RegexLexer.bas,904,Advance,&HFFFF&
+runtime_operators,RegexRanges.bas,47,RegexpGenerateRanges,integer division
+numeric_const_declarations,RegexReplace.bas,18,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,19,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,20,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,21,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,22,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,23,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,24,ParseFormatString,Long
+numeric_const_declarations,RegexReplace.bas,25,ParseFormatString,Long
+optional_parameters,RegexReplace.bas,113,AppendFormatted,Long
+with_nonstable_receivers,RegexReplace.bas,140,AppendFormatted,StartLengthPair
+with_nonstable_receivers,RegexReplace.bas,149,AppendFormatted,StartLengthPair
+module_storage_declarations,RegexUnicodeSupport.bas,4,,Boolean
+module_storage_declarations,RegexUnicodeSupport.bas,5,,Boolean
+module_storage_declarations,RegexUnicodeSupport.bas,37,,Long()
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,51,InitializeRangeTables,&H30&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,52,InitializeRangeTables,&H39&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,56,InitializeRangeTables,&H9&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,57,InitializeRangeTables,&HD&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,58,InitializeRangeTables,&H20&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,59,InitializeRangeTables,&H20&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,60,InitializeRangeTables,&HA0&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,61,InitializeRangeTables,&HA0&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,62,InitializeRangeTables,&H1680&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,63,InitializeRangeTables,&H1680&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,64,InitializeRangeTables,&H180E&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,65,InitializeRangeTables,&H180E&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,66,InitializeRangeTables,&H2000&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,67,InitializeRangeTables,&H200A
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,68,InitializeRangeTables,&H2028&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,69,InitializeRangeTables,&H2029&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,70,InitializeRangeTables,&H202F
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,71,InitializeRangeTables,&H202F
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,72,InitializeRangeTables,&H205F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,73,InitializeRangeTables,&H205F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,74,InitializeRangeTables,&H3000&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,75,InitializeRangeTables,&H3000&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,76,InitializeRangeTables,&HFEFF&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,77,InitializeRangeTables,&HFEFF&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,81,InitializeRangeTables,&H30&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,82,InitializeRangeTables,&H39&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,83,InitializeRangeTables,&H41&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,84,InitializeRangeTables,&H5A&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,85,InitializeRangeTables,&H5F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,86,InitializeRangeTables,&H5F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,87,InitializeRangeTables,&H61&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,88,InitializeRangeTables,&H7A&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,93,InitializeRangeTables,&H2F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,94,InitializeRangeTables,&H3A&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,100,InitializeRangeTables,&H8&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,101,InitializeRangeTables,&HE&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,102,InitializeRangeTables,&H1F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,103,InitializeRangeTables,&H21&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,104,InitializeRangeTables,&H9F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,105,InitializeRangeTables,&HA1&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,106,InitializeRangeTables,&H167F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,107,InitializeRangeTables,&H1681&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,108,InitializeRangeTables,&H180D&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,109,InitializeRangeTables,&H180F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,110,InitializeRangeTables,&H1FFF&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,111,InitializeRangeTables,&H200B&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,112,InitializeRangeTables,&H2027&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,113,InitializeRangeTables,&H202A&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,114,InitializeRangeTables,&H202E&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,115,InitializeRangeTables,&H2030&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,116,InitializeRangeTables,&H205E&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,117,InitializeRangeTables,&H2060&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,118,InitializeRangeTables,&H2FFF&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,119,InitializeRangeTables,&H3001&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,120,InitializeRangeTables,&HFEFE&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,121,InitializeRangeTables,&HFF00&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,127,InitializeRangeTables,&H2F&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,128,InitializeRangeTables,&H3A&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,129,InitializeRangeTables,&H40&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,130,InitializeRangeTables,&H5B&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,131,InitializeRangeTables,&H5E&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,132,InitializeRangeTables,&H60&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,133,InitializeRangeTables,&H60&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,134,InitializeRangeTables,&H7B&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,142,ReCanonicalizeChar,&HFFFF0000
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,145,ReCanonicalizeChar,&HFFFF&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,151,UnicodeIsLineTerminator,&HA&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,153,UnicodeIsLineTerminator,&HD&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,155,UnicodeIsLineTerminator,&H2028&
+runtime_nondecimal_literals,RegexUnicodeSupport.bas,157,UnicodeIsLineTerminator,&H2029&
+numeric_const_declarations,RegexUnicodeSupport.bas,166,InitializeUnicodeCanonLookupTable,Long
+numeric_const_declarations,RegexUnicodeSupport.bas,391,InitializeUnicodeCanonRunsTable,Long
+optional_parameters,StaticRegex.bas,29,TryInitializeRegex,Boolean
+optional_parameters,StaticRegex.bas,48,InitializeRegex,Boolean
+boolean_integral_assignments,StaticRegex.bas,51,InitializeRegex,Boolean -> Long
+optional_parameters,StaticRegex.bas,60,Test,Boolean
+optional_parameters,StaticRegex.bas,61,Test,Boolean
+optional_parameters,StaticRegex.bas,75,Match,Boolean
+optional_parameters,StaticRegex.bas,76,Match,Boolean
+optional_parameters,StaticRegex.bas,77,Match,Long
+optional_parameters,StaticRegex.bas,101,GetCapture,Long
+with_nonstable_receivers,StaticRegex.bas,107,GetCapture,StartLengthPair
+optional_parameters,StaticRegex.bas,135,MatchNext,Boolean
+optional_parameters,StaticRegex.bas,163,Replace,Boolean
+optional_parameters,StaticRegex.bas,164,Replace,Boolean
+optional_parameters,StaticRegex.bas,165,Replace,Boolean
+optional_parameters,StaticRegex.bas,190,SplitByRegex,Boolean
+optional_parameters,StaticRegex.bas,191,SplitByRegex,Boolean
+optional_parameters,StaticRegex.bas,192,SplitByRegex,Boolean
+with_nonstable_receivers,StaticRegex.bas,211,SplitByRegex,StartLengthPair
+optional_parameters,StaticRegex.bas,226,MatchThenJoin,String
+optional_parameters,StaticRegex.bas,227,MatchThenJoin,String
+optional_parameters,StaticRegex.bas,228,MatchThenJoin,Boolean
+optional_parameters,StaticRegex.bas,229,MatchThenJoin,Boolean
+optional_parameters,StaticRegex.bas,230,MatchThenJoin,Boolean
+optional_parameters,StaticRegex.bas,255,MatchThenList,Boolean
+optional_parameters,StaticRegex.bas,256,MatchThenList,Boolean
+optional_parameters,StaticRegex.bas,257,MatchThenList,Boolean
+optional_parameters,StaticRegex.bas,309,InitializeMatcherState,Boolean
+optional_parameters,StaticRegex.bas,310,InitializeMatcherState,Boolean
+optional_parameters,StaticRegex.bas,311,InitializeMatcherState,Boolean
+runtime_operators,StaticStringBuilder.bas,104,SwitchToLargerBuffer,integer division

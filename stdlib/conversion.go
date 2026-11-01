@@ -1,0 +1,26 @@
+package stdlib
+
+var conversionFunctions = [...]Function{
+	{ID: CDate, Call: SnapshotCall, Module: "Conversion", Name: "CDate", Result: Type{Kind: TypeDate}, Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.4"},
+	{ID: CVDate, Call: SnapshotCall, Module: "Conversion", Name: "CVDate", Result: Type{Kind: TypeVariant}, Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.4"},
+	{ID: CCur, Call: SnapshotCall, Module: "Conversion", Name: "CCur", Result: Type{Kind: TypeCurrency}, Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.3"},
+	{ID: CDec, Call: SnapshotCall, Module: "Conversion", Name: "CDec", Result: Type{Kind: TypeVariant}, Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.6"},
+	{ID: CByte, Call: SnapshotCall, Module: "Conversion", Name: "CByte", Result: Type{Kind: TypeByte},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.2"},
+	{ID: CVErr, Call: SnapshotCall, Module: "Conversion", Name: "CVErr", Result: Type{Kind: TypeVariant},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3.1.14"},
+	{ID: CVar, Module: "Conversion", Name: "CVar", Result: Type{Kind: TypeVariant},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CInt, Call: SnapshotCall, Module: "Conversion", Name: "CInt", Result: Type{Kind: TypeInteger},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CLng, Call: SnapshotCall, Module: "Conversion", Name: "CLng", Result: Type{Kind: TypeLong},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CBool, Call: SnapshotCall, Module: "Conversion", Name: "CBool", Result: Type{Kind: TypeBoolean},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CStr, Call: SnapshotCall, Module: "Conversion", Name: "CStr", Result: Type{Kind: TypeString},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CSng, Call: SnapshotCall, Module: "Conversion", Name: "CSng", Result: Type{Kind: TypeSingle},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+	{ID: CDbl, Call: SnapshotCall, Module: "Conversion", Name: "CDbl", Result: Type{Kind: TypeDouble},
+		Parameters: []Parameter{variant("Expression")}, Section: "6.1.2.3"},
+}

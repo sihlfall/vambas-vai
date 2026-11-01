@@ -1,0 +1,9 @@
+{
+  "interface": "stdvba/src/stdICallable.cls",
+  "sha256": "166561bec226ee4fc6cb10156b953366939db13f4f394b19ff95b5b99ab59d5d",
+  "source_revision": "4d0ebb32a7161376cf54f0cf84013ee711a718e8",
+  "native_exits": {
+    "-O0": 42,
+    "-O2": 42
+  }
+}

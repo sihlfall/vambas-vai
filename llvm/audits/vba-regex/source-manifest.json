@@ -1,0 +1,72 @@
+[
+  {
+    "file": "ArrayBuffer.bas",
+    "bytes": 5273,
+    "sha256": "7f6c6d5ba0860c9b03d8c07c8639b43c3e649155c1e724d8dea7037a754a4f8e"
+  },
+  {
+    "file": "RegexAst.bas",
+    "bytes": 23852,
+    "sha256": "66900e933b67e4fadd36e0e4ebc762c88494842f7088c395702c09414c485f38"
+  },
+  {
+    "file": "RegexBytecode.bas",
+    "bytes": 4104,
+    "sha256": "48e069a050c56e6fc2f3d57be3c1e14e8028704f5f7c57d1b8767d76c6a99566"
+  },
+  {
+    "file": "RegexCompiler.bas",
+    "bytes": 23700,
+    "sha256": "32bc10cbf7e6007e4da72973a56a14d5be23ac44b0461d939d20b3f58f305037"
+  },
+  {
+    "file": "RegexDfsMatcher.bas",
+    "bytes": 29922,
+    "sha256": "e6280caad387cf7ceb1ba45d51597ca6fbe580f9eec2de51ed7e6b249f393128"
+  },
+  {
+    "file": "RegexErrors.bas",
+    "bytes": 1057,
+    "sha256": "93d07770375580987aeb0191129fbf994faebfa2ad1171af9226fb8f5a757543"
+  },
+  {
+    "file": "RegexIdentifierSupport.bas",
+    "bytes": 7504,
+    "sha256": "d23443f3247397fe10670ee9452fbd37ecdd2f44aa8864beafcdd073952f0774"
+  },
+  {
+    "file": "RegexLexer.bas",
+    "bytes": 33750,
+    "sha256": "c2daa12735afdcd5bfb2ddb61fa8cb7435e1d2bdff33b4d1aebed5e099d02688"
+  },
+  {
+    "file": "RegexNumericConstants.bas",
+    "bytes": 274,
+    "sha256": "51635bd61ffb1de9d1d377b434ae978c28acbc81ec33ae55f8d19222e209a954"
+  },
+  {
+    "file": "RegexRanges.bas",
+    "bytes": 2149,
+    "sha256": "717d9fb6c84bc5851610184e8d77c60275025d50d502c7314899ca1df0298ed5"
+  },
+  {
+    "file": "RegexReplace.bas",
+    "bytes": 6205,
+    "sha256": "31243922c307627d031aba6d3f83c4b8cdb993de3c839c12a52e7d1b552b7fe1"
+  },
+  {
+    "file": "RegexUnicodeSupport.bas",
+    "bytes": 19542,
+    "sha256": "42c6d7e12c15e105c1567113f3f33ab68f677c144d279a653a895def15d11872"
+  },
+  {
+    "file": "StaticRegex.bas",
+    "bytes": 11561,
+    "sha256": "63ba4994c720ca96a68959451fb772c8e0591bf588a9756be0efcd65e414f896"
+  },
+  {
+    "file": "StaticStringBuilder.bas",
+    "bytes": 3563,
+    "sha256": "bbabd3ac6288f87bf76badef71cf39108ee7b47a594ff59903a83887bf282dff"
+  }
+]

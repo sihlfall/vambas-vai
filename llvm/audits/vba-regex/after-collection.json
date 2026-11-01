@@ -1,0 +1,45 @@
+{
+  "stage": "Collection: complete original regex test project",
+  "date": "2026-10-25",
+  "regex_commit": "1619cd75526903045b8c5cb8c6048f93bc4160be",
+  "project": "../vba-regex/test/TestVbaRegex.vbp",
+  "reproduce": "python3 llvm/audits/vba-regex/run-tests.py",
+  "source_rewrites": false,
+  "source_or_test_filtering": false,
+  "original_source_files_matching_recorded_hashes": 14,
+  "test_modules": {
+    "TestArrayBuffer": 1,
+    "TestAst": 4,
+    "TestCompiler": 71,
+    "TestDfsMatcher": 58,
+    "TestLexer": 12,
+    "TestRangeConstants": 12,
+    "TestReplace": 11,
+    "TestStaticRegex": 34
+  },
+  "runs": {
+    "O0": {
+      "passed": 203,
+      "skipped": 0,
+      "other_outcomes": 0
+    },
+    "O2": {
+      "passed": 203,
+      "skipped": 0,
+      "other_outcomes": 0
+    }
+  },
+  "validation_host": "Linux x86-64, LLVM/Clang 20",
+  "remaining_collection_limits": [
+    "Locale-sensitive Unicode key comparison",
+    "Object-valued Automation Variants",
+    "General class/COM interop"
+  ],
+  "regression_checks": [
+    "go test -timeout 20m ./...",
+    "go test ./checker ./lowering ./ir ./testrunner ./llvm -run 'Collection|NativeAssertionsAndLifecycle'",
+    "go vet ./...",
+    "clang-20 -std=c11 -Wall -Wextra -Werror -c runtime/variant.c"
+  ],
+  "regression_status": "passed"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "Err, On Error, UDT arrays, captured With",
+  "original_source_files_unchanged": 14,
+  "full_project_diagnostics": 3,
+  "full_project_remaining": "Collection in StaticRegex.SplitByRegex",
+  "unchanged_core_modules": 13,
+  "core_lowering_and_llvm_verification": "passed",
+  "execution_copy_excludes": "StaticRegex.SplitByRegex only",
+  "execution_probe": "execution-probe.bas",
+  "native_exit_status": {
+    "O0": 42,
+    "O2": 42
+  },
+  "regression_suite": "VBA_LLVM_TEST_REQUIRED=1 go test ./... passed",
+  "focused_checks": [
+    "native error recovery and record-array tests at O0/O2",
+    "allocation and ownership failure injection",
+    "Go front-end/lowering/IR race tests",
+    "go vet ./...",
+    "IR verifier fuzzing"
+  ]
+}

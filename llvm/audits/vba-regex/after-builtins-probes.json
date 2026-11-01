@@ -1,0 +1,125 @@
+{
+  "standalone_probes": {
+    "ArrayBuffer": {
+      "diagnostics": null,
+      "success": true
+    },
+    "RegexErrors": {
+      "diagnostics": null,
+      "success": true
+    },
+    "RegexNumericConstants": {
+      "diagnostics": null,
+      "success": true
+    }
+  },
+  "minimal_probes": {
+    "Boolean/integral Let": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support conversion from Boolean to Long",
+          "Line": 3
+        },
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support conversion from Integer to Boolean",
+          "Line": 4
+        }
+      ],
+      "source": "Sub Run()\n Dim b As Boolean,n As Long\n n=b\n b=0\nEnd Sub",
+      "success": false
+    },
+    "Mod": {
+      "diagnostics": null,
+      "source": "Function Run() As Long\n Run=5 Mod 2\nEnd Function",
+      "success": true
+    },
+    "UDT arrays": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support type Item()",
+          "Line": 5
+        }
+      ],
+      "source": "Type Item\n N As Long\nEnd Type\nType State\n Items() As Item\nEnd Type\nSub Run()\nEnd Sub",
+      "success": false
+    },
+    "captured With receiver": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support With receivers other than stable UDT storage",
+          "Line": 5
+        }
+      ],
+      "source": "Type Item\n N As Long\nEnd Type\nFunction Run() As Long\n With MakeItem()\n Run=.N\n End With\nEnd Function\nFunction MakeItem() As Item\nEnd Function",
+      "success": false
+    },
+    "integer division": {
+      "diagnostics": null,
+      "source": "Function Run() As Long\n Run=5 \\ 2\nEnd Function",
+      "success": true
+    },
+    "module globals": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support module declaration",
+          "Line": 1
+        },
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support module declaration",
+          "Line": 2
+        }
+      ],
+      "source": "Public flag As Boolean\nPublic values(3) As Long\nSub Run()\n flag=True\nEnd Sub",
+      "success": false
+    },
+    "numeric Const": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support non-String or unsupported Const expressions",
+          "Line": 1
+        }
+      ],
+      "source": "Public Const Count As Long=3\nFunction Run() As Long\n Run=Count\nEnd Function",
+      "success": false
+    },
+    "runtime hex": {
+      "diagnostics": null,
+      "source": "Function Run() As Long\n Run=&HFFFF&\nEnd Function",
+      "success": true
+    },
+    "typed Optional": {
+      "diagnostics": [
+        {
+          "Stage": "lower",
+          "File": "Probe.bas",
+          "Code": "unsupported-lowering",
+          "Message": "Semantic IR does not yet support Optional and ParamArray parameters",
+          "Line": 1
+        }
+      ],
+      "source": "Function Run(Optional ByVal flag As Boolean=False) As Long\nEnd Function",
+      "success": false
+    }
+  }
+}

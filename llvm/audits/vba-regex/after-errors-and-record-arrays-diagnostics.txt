@@ -1,0 +1,5 @@
+../vba-regex/src/StaticRegex.bas:193:6: unknown-type: Type "Collection" is not defined in this project
+../vba-regex/src/StaticRegex.bas:194:75: unknown-type: Type "Collection" is not defined in this project
+../vba-regex/src/StaticRegex.bas:197:26: unknown-type: Type "Collection" is not defined in this project
+compilation failed with 3 diagnostic(s)
+exit status 1

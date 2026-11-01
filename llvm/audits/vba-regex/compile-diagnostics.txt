@@ -1,0 +1,70 @@
+../vba-regex/src/StaticRegex.bas:36:8: unsupported-syntax: On Error is not supported yet
+../vba-regex/src/RegexAst.bas:290:9: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexAst.bas:472:9: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexBytecode.bas:100:23: undeclared-name: Variable "StrComp" is not declared
+../vba-regex/src/RegexBytecode.bas:103:17: undeclared-name: Variable "vbBinaryCompare" is not declared
+../vba-regex/src/RegexCompiler.bas:194:43: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexCompiler.bas:215:17: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexCompiler.bas:236:17: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexCompiler.bas:294:17: undeclared-name: Variable "IIf" is not declared
+../vba-regex/src/RegexCompiler.bas:355:17: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexCompiler.bas:488:47: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexCompiler.bas:503:13: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexDfsMatcher.bas:122:28: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexDfsMatcher.bas:133:29: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexDfsMatcher.bas:423:38: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexDfsMatcher.bas:744:9: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexIdentifierSupport.bas:94:26: undeclared-name: Variable "StrComp" is not declared
+../vba-regex/src/RegexIdentifierSupport.bas:97:9: undeclared-name: Variable "vbBinaryCompare" is not declared
+../vba-regex/src/RegexLexer.bas:206:70: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:209:69: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:212:56: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:215:40: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:225:36: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:237:17: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:271:31: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:276:9: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:290:13: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:304:17: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:339:13: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:347:55: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:356:70: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:359:69: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:407:61: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:420:21: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:428:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:431:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:434:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:443:25: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:453:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:456:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:459:72: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:466:25: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:678:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:681:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:684:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:792:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:836:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexLexer.bas:891:31: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexLexer.bas:891:52: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexLexer.bas:891:74: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexLexer.bas:891:95: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexLexer.bas:904:33: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexReplace.bas:32:18: undeclared-name: Variable "InStr" is not declared
+../vba-regex/src/RegexReplace.bas:32:51: undeclared-name: Variable "vbBinaryCompare" is not declared
+../vba-regex/src/RegexReplace.bas:36:13: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexReplace.bas:57:26: undeclared-name: Variable "InStr" is not declared
+../vba-regex/src/RegexReplace.bas:57:60: undeclared-name: Variable "vbBinaryCompare" is not declared
+../vba-regex/src/RegexReplace.bas:87:25: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/RegexReplace.bas:103:5: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/RegexReplace.bas:129:47: undeclared-name: Variable "Left$" is not declared
+../vba-regex/src/RegexReplace.bas:156:13: undeclared-name: Variable "Err" is not declared
+../vba-regex/src/StaticRegex.bas:293:19: undeclared-name: Variable "Split" is not declared
+../vba-regex/src/StaticRegex.bas:299:22: undeclared-name: Variable "AscW" is not declared
+../vba-regex/src/StaticStringBuilder.bas:71:18: undeclared-name: Variable "Left$" is not declared
+../vba-regex/src/StaticStringBuilder.bas:106:32: undeclared-name: Variable "String" is not declared
+../vba-regex/src/StaticRegex.bas:193:6: unknown-type: Type "Collection" is not defined in this project
+../vba-regex/src/StaticRegex.bas:194:75: unknown-type: Type "Collection" is not defined in this project
+../vba-regex/src/StaticRegex.bas:197:26: unknown-type: Type "Collection" is not defined in this project
+compilation failed with 68 diagnostic(s)
+exit status 1

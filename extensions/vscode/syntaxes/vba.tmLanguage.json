@@ -1,0 +1,261 @@
+{
+  "name": "VBA / VB6",
+  "scopeName": "source.vba",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#dates"
+    },
+    {
+      "include": "#labels"
+    },
+    {
+      "include": "#declarations"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#memberNames"
+    },
+    {
+      "include": "#literals"
+    },
+    {
+      "include": "#stringFunction"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#modifiers"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#builtins"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#continuation"
+    },
+    {
+      "include": "#identifiers"
+    },
+    {
+      "include": "#punctuation"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.apostrophe.vba",
+          "begin": "'",
+          "end": "$",
+          "patterns": [
+            {
+              "name": "storage.type.annotation.vba",
+              "match": "@[A-Za-z][A-Za-z0-9_]*"
+            }
+          ]
+        },
+        {
+          "name": "comment.line.rem.vba",
+          "begin": "(?i)(?<![A-Za-z0-9_.!])Rem(?=[ \\t]|$)",
+          "end": "$"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.vba",
+      "begin": "\"",
+      "end": "\"|$",
+      "applyEndPatternLast": true,
+      "patterns": [
+        {
+          "name": "constant.character.escape.quote.vba",
+          "match": "\"\""
+        }
+      ]
+    },
+    "directives": {
+      "name": "meta.preprocessor.vba",
+      "begin": "(?i)^[ \\t]*(#[ \\t]*(?:End[ \\t]+If|ElseIf|Else|If|Const))\\b",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.directive.vba"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#comments"
+        },
+        {
+          "include": "#strings"
+        },
+        {
+          "include": "#numbers"
+        },
+        {
+          "include": "#literals"
+        },
+        {
+          "include": "#operators"
+        },
+        {
+          "name": "keyword.control.vba",
+          "match": "(?i)(?<![A-Za-z0-9_.!])(?:Then)(?![A-Za-z0-9_])"
+        },
+        {
+          "include": "#identifiers"
+        }
+      ]
+    },
+    "dates": {
+      "name": "constant.other.date.vba",
+      "match": "(?i)#(?=[ \\t]*(?:[0-9]|[A-Za-z]+[ \\t]+[0-9]))[^#\\r\\n]*#"
+    },
+    "labels": {
+      "patterns": [
+        {
+          "match": "^[ \\t]*([0-9]+)(?=[ \\t]|:|$)",
+          "captures": {
+            "1": {
+              "name": "entity.name.label.vba"
+            }
+          }
+        },
+        {
+          "match": "^[ \\t]*([A-Za-z][A-Za-z0-9_]*)([ \\t]*:(?!=))",
+          "captures": {
+            "1": {
+              "name": "entity.name.label.vba"
+            },
+            "2": {
+              "name": "punctuation.separator.statement.vba"
+            }
+          }
+        }
+      ]
+    },
+    "declarations": {
+      "patterns": [
+        {
+          "match": "(?i)(?<![A-Za-z0-9_.!])((?:Sub|Function|Property[ \\t]+(?:Get|Let|Set)))[ \\t]+((?:[A-Za-z][A-Za-z0-9_]*(?:[$%&^!#@](?![A-Za-z0-9_]))?|\\[[^\\]\\r\\n]+\\]))",
+          "captures": {
+            "1": {
+              "name": "storage.type.function.vba"
+            },
+            "2": {
+              "name": "entity.name.function.vba"
+            }
+          }
+        },
+        {
+          "match": "(?i)(?<![A-Za-z0-9_.!])((?:Type|Enum))[ \\t]+((?:[A-Za-z][A-Za-z0-9_]*(?:[$%&^!#@](?![A-Za-z0-9_]))?|\\[[^\\]\\r\\n]+\\]))",
+          "captures": {
+            "1": {
+              "name": "storage.type.vba"
+            },
+            "2": {
+              "name": "entity.name.type.vba"
+            }
+          }
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.vba",
+      "match": "(?i)(?<![A-Za-z0-9_])(?:&H[0-9A-F]+[&^]?|&O[0-7]+[&^]?|(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)(?:[ED][+-]?[0-9]+)?[%&^!#@]?)(?![A-Za-z0-9_])"
+    },
+    "literals": {
+      "name": "constant.language.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])(?:Nothing|False|Empty|True|Null)(?![A-Za-z0-9_])"
+    },
+    "types": {
+      "name": "storage.type.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])(?:Currency|LongLong|Boolean|Decimal|Integer|LongPtr|Variant|Double|Object|Single|String|Byte|Date|Long|Any)(?![A-Za-z0-9_])"
+    },
+    "modifiers": {
+      "name": "storage.modifier.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])(?:ParamArray|WithEvents|Optional|Private|PtrSafe|Public|Friend|Global|Static|ByVal|ByRef)(?![A-Za-z0-9_])"
+    },
+    "keywords": {
+      "name": "keyword.control.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])(?:BEGINPROPERTY|ENDPROPERTY|IMPLEMENTS|RAISEEVENT|ATTRIBUTE|DEFLNGLNG|DEFLNGPTR|RANDOMIZE|DATABASE|FUNCTION|PRESERVE|PROPERTY|DECLARE|DEFBOOL|DEFBYTE|DEFDATE|VERSION|CIRCLE|OPTION|ACCESS|APPEND|BINARY|DEFDBL|DEFCUR|DEFINT|DEFLNG|DEFOBJ|DEFSNG|DEFSTR|DEFVAR|ELSEIF|OUTPUT|RANDOM|RESUME|RETURN|SELECT|SHARED|UNLOCK|DEBUG|SCALE|ALIAS|BEGIN|CDECL|CLASS|CLOSE|CONST|ERASE|ERROR|EVENT|GOSUB|INPUT|PRINT|REDIM|RESET|UNTIL|WHILE|WIDTH|WRITE|EXIT|PSET|CALL|CASE|EACH|ELSE|ENUM|GOTO|LOCK|LOOP|LSET|NAME|NEXT|OPEN|READ|RSET|SEEK|STEP|STOP|TEXT|THEN|TYPE|WEND|WITH|DIM|END|FOR|GET|LET|LIB|NEW|PUT|SET|SPC|SUB|TAB|AS|DO|IF|IN|ME|ON|TO)(?![A-Za-z0-9_$%&^!#@])"
+    },
+    "builtins": {
+      "name": "support.function.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])(?:CreateObject|DoEvents|CLngLng|CLngPtr|StrComp|InputB|LBound|UBound|String|Array|CBool|CByte|CDate|CVErr|InStr|Right|Split|CCur|CDbl|CDec|CInt|CLng|CSng|CStr|CVar|LenB|MidB|AscW|ChrW|Left|Abs|Fix|Int|Len|Mid|Sgn|Asc|Chr|IIf)(?![A-Za-z0-9_])\\$?"
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.word.vba",
+          "match": "(?i)(?<![A-Za-z0-9_.!])(?:AddressOf|TypeOf|Like|And|Xor|Not|Eqv|Imp|Mod|Or|Is)(?![A-Za-z0-9_])"
+        },
+        {
+          "name": "keyword.operator.vba",
+          "match": ":=|<=|>=|<>|[+*/\\\\^&=<>-]"
+        }
+      ]
+    },
+    "continuation": {
+      "name": "punctuation.separator.continuation.vba",
+      "match": "(?<=[ \\t])_[ \\t]*$"
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.readwrite.vba",
+          "match": "[A-Za-z][A-Za-z0-9_]*(?:[$%&^!#@](?![A-Za-z0-9_]))?"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.section.group.vba",
+          "match": "[()]"
+        },
+        {
+          "name": "punctuation.accessor.vba",
+          "match": "[.!]"
+        },
+        {
+          "name": "punctuation.separator.vba",
+          "match": "[,;:]"
+        }
+      ]
+    },
+    "memberNames": {
+      "patterns": [
+        {
+          "name": "variable.other.readwrite.vba",
+          "match": "\\[[^\\]\\r\\n]+\\]"
+        },
+        {
+          "name": "variable.other.property.vba",
+          "match": "(?<=[.!])[A-Za-z][A-Za-z0-9_]*(?:[$%&^!#@](?![A-Za-z0-9_]))?"
+        }
+      ]
+    },
+    "stringFunction": {
+      "name": "support.function.vba",
+      "match": "(?i)(?<![A-Za-z0-9_.!])String(?:\\$|(?=[ \\t]*\\())"
+    }
+  }
+}

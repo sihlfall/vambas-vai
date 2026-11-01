@@ -1,0 +1,52 @@
+{
+  "name": "vambas-language-server",
+  "displayName": "VBA Language Server (Development)",
+  "description": "VBA/VB6 highlighting, UDT member completion, diagnostics, and navigation using the Go front end.",
+  "publisher": "vambas-vai",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "vscode": "^1.91.0" },
+  "main": "./extension.js",
+  "scripts": { "test": "node --test extension.test.js grammar.test.js", "test:server": "node smoke-test.js" },
+  "extensionKind": ["workspace"],
+  "capabilities": { "untrustedWorkspaces": { "supported": false } },
+  "activationEvents": ["onLanguage:vba"],
+  "contributes": {
+    "languages": [{
+      "id": "vba",
+      "aliases": ["VBA", "VB6"],
+      "extensions": [".bas", ".cls", ".frm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vba",
+      "scopeName": "source.vba",
+      "path": "./syntaxes/vba.tmLanguage.json"
+    }],
+    "commands": [{ "command": "vba.restartServer", "title": "VBA: Restart Language Server" }],
+    "configuration": {
+      "title": "VBA",
+      "properties": {
+        "vba.server.path": {
+          "type": "string",
+          "default": "vambas-language-server",
+          "scope": "machine-overridable",
+          "description": "Executable path, or command on PATH. Restart the server after changing."
+        },
+        "vba.projectFile": {
+          "type": "string",
+          "default": "",
+          "description": "Optional .vbp path, absolute or relative to the workspace folder. Restart the server after changing."
+        },
+        "vba.sourceEncoding": {
+          "type": "string",
+          "enum": ["auto", "utf8", "windows1252"],
+          "default": "auto",
+          "description": "Disk source/manifest decoding. Auto honors Unicode BOMs, prefers UTF-8, and otherwise uses Windows-1252 for legacy exports. Does not change VS Code's file encoding. Restart the server after changing."
+        }
+      }
+    }
+  },
+  "dependencies": { "vscode-languageclient": "^10.0.1" },
+  "devDependencies": {"vscode-oniguruma": "^2.0.1", "vscode-textmate": "^9.3.2"}
+}

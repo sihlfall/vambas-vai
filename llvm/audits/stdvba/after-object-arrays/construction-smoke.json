@@ -1,0 +1,10 @@
+{
+  "source": "stdQuadTree.cls",
+  "probe": "../object-arrays-probe.bas",
+  "scope": "Construction, managed array field initialization, cleanup only. Query/insertion APIs not established.",
+  "llvm_verified": true,
+  "native_exit_codes": {
+    "-O0": 42,
+    "-O2": 42
+  }
+}
